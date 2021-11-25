@@ -79,8 +79,7 @@ class Store extends Component{
             $this->vars['back_link']=$system_url_controller->link_to_url($system_url_controller->current['back_link']);
         }else{
             //WE WANT TO GENERATE LINK FOR THE USER TO BE ABLE TO JUMP BACK AFTER FINISH EDITING HIS PROFILE 
-            $link=$system_url_controller->page_location_url_with_jump('Edit User');
-            $this->vars['back_link']=$link;
+            $this->vars['back_link']=$system_url_controller->page_location_url_with_jump('Edit User');
         }
         
         //NAVIGATION LINKS FOR CURRENT STATE
